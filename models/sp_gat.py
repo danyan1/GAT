@@ -4,6 +4,7 @@ import tensorflow as tf
 from utils import layers
 from models.base_gattn import BaseGAttN
 
+
 class SpGAT(BaseGAttN):
     def inference(inputs, nb_classes, nb_nodes, training, attn_drop, ffd_drop,
             bias_mat, hid_units, n_heads, activation=tf.nn.elu, 
